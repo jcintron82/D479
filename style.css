@@ -1,0 +1,203 @@
+.logo{
+    width: 7vw;
+    margin-left: .5rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.lowerHomeSec{
+    background-color: #6699CC;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin: .25rem;
+    color: white;
+}
+label > input {
+    border-radius: 0.8rem;
+    box-shadow: 0px 2px 0px 0px #BDBDBD;
+    width: 29vw;
+    background-color: #F1F4FF;
+}
+form > button {
+    align-self: center;
+    margin-top: 1rem;
+    background-color: #F1F4FF;
+    border-radius: 0.65rem;
+    width: 42%;
+    height: 2rem;
+    font-size: .8rem;
+    box-shadow: 0px 2px 0px 0px #BDBDBD;    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: white;
+    align-items: center;
+    height: 13vh;
+}
+
+.headerNav{
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    margin-right: 1rem;
+    min-width: 44%;
+}
+.headerNav > button {
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: none;
+    width: 100%;
+    background: #003B6D;
+    color: white;
+    font-size: 1rem;
+}
+.headerNav > span > a {
+    height: 2rem;
+    min-width: 15vw;
+    /* border: 2px solid #6495ED; */
+    color: white;
+    border-radius: 1rem;
+    /* padding-top: 7px; */
+    background: #003B6D;
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+}
+.homeMainSection{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 39vh;
+    align-items: center;
+}
+.homeLinkWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #003B6D;
+    border-radius: .5rem;
+    padding: 10px 0 10px 0;
+    gap: 26px;
+    align-items: center;
+    width: 50vw;
+}
+.homeLinkWrap > button{
+    width: 50%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.homeLinkWrap > div>  a{
+
+    height: 2rem;
+    min-width: 23vw;
+
+    /* border: 2px solid #6495ED; */
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    /* padding-top: 7px; */
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+}
+.topSecHome{
+    padding: 5px;
+    background-color: #6699CC;
+}
+.topSecHome > *, .lowerHomeSec > p{
+    font-weight: lighter;
+    margin: .5rem 3vw .5rem 3vw;
+}
+.homeimgWrap{
+    display: flex;
+    gap: 16px;
+}
+.homeimgWrap > div > img {
+    width: 30vw;
+}
+.img1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.img2{
+    display: flex;
+    flex-direction: row;
+}
+button:hover{
+    cursor: pointer;
+}
+.homeFooter{
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.pageFooter{
+    background-color: #6699CC;
+    display: flex;
+    align-items: center;
+}
+footer > p {
+    margin-left: .5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    width: 45%;
+    border-radius: 0.25rem;
+    background-color: #003B6D;
+    align-self: center;
+    align-items: baseline;
+    box-shadow: 2px 2px 2px 2px black;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 1rem 0 1rem 0;
+}
+.invisible{
+    display: none;
+}
+.infoPageNav{
+    display: flex;
+}
+.infoPageNav > button{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    background: #003B6D;
+    color: white;
+    border-radius: 0.6rem;
+    border: none;
+}
+.infoPageMain{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.paraDiv > #groomingPara, .paraDiv > #vaxPara, .paraDiv > #paratwo, .paraDiv > #parathree, .paraDiv > #parafour {
+    display: none;
+}
+.paraDiv > p {
+    padding-left: 1rem;
+}
+aside{
+    margin-right: 1rem;
+    margin-left: .75rem;
+}
+aside > img {
+    max-width: 20vw;
+}
+.pageImg{
+    max-width: 10rem;
+}

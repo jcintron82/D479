@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activities</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<header>
+        <div><a href="index.html" ><img class="logo" src="logo.jpg"></a> </div><nav class="headerNav"><span><a href="index.html">Home</a></span><span><a href="travel.html">Travel</a></span><span><a href="accomodations.html">Accomodations</a></span>
+        </nav>
+    </header>
+    <section class="topSecHome">
+        <div>Taniti offers multiple activities regardless of your vacation style or budget.</div><br>
+        <p>See a list of activities below and find what moves you!</p>
+          </section>
+    <section class="infoPageMain">
+        <section>
+        
+            <nav class="infoPageNav">
+                <button id="dietBtn">
+                    Entertainment
+                </button>
+                <button id="groomingBtn">
+                    Sightseeing
+                </button>
+                <button id="vaxBtn">
+                    Restaurants
+                </button>
+            </nav >
+            <div class="paraDiv">
+                <p id="dietPara">
+                    <b>Entertainment</b><br><br>
+                    Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay. 
+                </p>
+                <p id="groomingPara">
+                    <b>Sightseeing</b><br><br>
+                    Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano.
+                </p>
+                <p id="vaxPara">
+                    <b>Restaurants</b><br><br>
+                    Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.
+                     Taniti also has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. 
+                    
+                </p>
+            </div>
+            
+
+
+
+
+
+
+        </section>
+        <aside>
+            <img src="activities.avif">
+        </aside>
+    </section>
+    
+ 
+    <script>
+        const groomingBtn = document.getElementById("groomingBtn");
+        const vaxBtn = document.getElementById("vaxBtn");
+        const dietBtn = document.getElementById("dietBtn");
+
+        const groomingPara = document.getElementById("groomingPara");
+        const vaxPara = document.getElementById("vaxPara");
+        const dietPara = document.getElementById("dietPara");
+
+        function showDiv(div) {
+            div.style.display = "block";
+            };
+        function closeDiv(div1,div2) {
+            div1.style.display = "none";
+            div2.style.display = "none";
+            };
+
+        groomingBtn.addEventListener("click", () => {
+            showDiv(groomingPara);
+            closeDiv(vaxPara, dietPara);
+        });
+
+        vaxBtn.addEventListener("click", () => {
+            showDiv(vaxPara);
+            closeDiv(groomingPara, dietPara);
+        });
+
+        dietBtn.addEventListener("click", () => {
+            showDiv(dietPara);
+            closeDiv(vaxPara, groomingPara);
+        });
+
+
+    </script>
+  </body>
+</html>

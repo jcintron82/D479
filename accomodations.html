@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accomodations</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<header>
+        <div><a href="index.html" ><img class="logo" src="logo.jpg"></a> </div><nav class="headerNav"><span><a href="index.html">Home</a></span><span><a href="travel.html">Travel</a></span><span><a href="activities.html">Activities</a></span>
+        </nav>
+    </header>
+    <section class="topSecHome">
+        <div>Taniti offers multiple accomodation styles regardless of your vacation style or budget.</div><br>
+        <p>See a list of accomodations below and find your paradise!</p>
+          </section>
+    <section class="infoPageMain">
+        <section>
+        
+            <nav class="infoPageNav">
+         
+                
+            </nav >
+            <div class="paraDiv">
+                <p id="dietPara">
+                    <b>Lodging</b><br><br>
+                    Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.
+                </p>
+                
+            </div>
+            
+
+
+
+
+
+
+        </section>
+        <aside>
+            <img src="hotel.avif">
+        </aside>
+    </section>
+    
+    
+    <script>
+        const groomingBtn = document.getElementById("groomingBtn");
+        const vaxBtn = document.getElementById("vaxBtn");
+        const dietBtn = document.getElementById("dietBtn");
+
+        const groomingPara = document.getElementById("groomingPara");
+        const vaxPara = document.getElementById("vaxPara");
+        const dietPara = document.getElementById("dietPara");
+
+        function showDiv(div) {
+            div.style.display = "block";
+            };
+        function closeDiv(div1,div2) {
+            div1.style.display = "none";
+            div2.style.display = "none";
+            };
+
+        groomingBtn.addEventListener("click", () => {
+            showDiv(groomingPara);
+            closeDiv(vaxPara, dietPara);
+        });
+
+        vaxBtn.addEventListener("click", () => {
+            showDiv(vaxPara);
+            closeDiv(groomingPara, dietPara);
+        });
+
+        dietBtn.addEventListener("click", () => {
+            showDiv(dietPara);
+            closeDiv(vaxPara, groomingPara);
+        });
+
+
+    </script>
+  </body>
+</html>
