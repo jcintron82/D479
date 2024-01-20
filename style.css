@@ -8,6 +8,22 @@ body{
     display: flex;
     flex-direction: column;
 }
+.pricePics{
+    width: 85%;
+    align-self: center;
+    height: 66%;
+}
+.paraDiv> ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    list-style: none;
+
+}
+.paraDiv >ul>li{
+    text-align: center;
+}
 .lowerHomeSec{
     background-color: #6699CC;
     display: flex;
@@ -174,7 +190,9 @@ form{
     display: flex;
     margin-top: 0.5rem;
     margin-left: 1rem;
+    min-height: 2rem;
     background: #003B6D;
+    align-items: center;
     color: white;
     border-radius: 0.6rem;
     border: none;
@@ -186,10 +204,12 @@ form{
     justify-content: space-around;
 }
 .paraDiv > #groomingPara, .paraDiv > #vaxPara, .paraDiv > #paratwo, .paraDiv > #parathree, .paraDiv > #parafour {
-    display: none;
+
 }
 .paraDiv > p {
     padding-left: 1rem;
+    justify-content: center;
+    display: flex;
 }
 aside{
     margin-right: 1rem;
